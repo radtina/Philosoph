@@ -4,19 +4,19 @@ A web application that simulates an argumentative conversation among various fig
 
 ## Features
 
-- Item 1 User Input:
+- User Input:
 Enter a topic to start a new conversation. When a new topic is provided, the conversation history resets.
 
-- Item 2 Opening Arguments:
+- Opening Arguments:
 Each figure generates an initial stance (for or against the topic). Their responses are stored with speaker attribution (e.g., Plato said: "...").
 
-- Item 3 Debate Progression:
+- Debate Progression:
 When a user clicks the "Continue" button on a figure's panel, only that panel is updated with a deeper response that critiques and defends its initial stance, referencing previous arguments by name.
 
-- Item 4 Conversation History Management:
+- Conversation History Management:
 The entire conversation history (all messages) is sent as context to the LLM, but only new messages are appended to the UI.
 
-- Item 5 Customizable Personalities:
+- Customizable Personalities:
 Each figure (philosopher, movie character, celebrity, etc.) has a personality prompt that can be edited via a right-click context menu.
 
 ## Project Structure

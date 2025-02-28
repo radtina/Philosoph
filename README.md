@@ -43,16 +43,20 @@ my-app/
  ### Backend
 
 1. Clone the Repository:
+
 ```
 git clone https://github.com/yourusername/philosopher-chat-simulator.git
 cd philosopher-chat-simulator
 ```
+
 2. Create a Virtual Environment and Install Dependencies:
+
 ```
 python -m venv venv
 source venv/bin/activate      # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
+
 Your requirements.txt should include at least:
 
 ```

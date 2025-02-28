@@ -21,7 +21,7 @@ Each figure (philosopher, movie character, celebrity, etc.) has a personality pr
 
 ## Project Structure
 
-
+```
 my-app/
 ├── backend.py            # FastAPI backend code for generating responses.
 ├── index.html            # Frontend HTML file.
@@ -29,7 +29,7 @@ my-app/
 ├── script.js             # Main JavaScript logic for the frontend.
 ├── philosophers.js       # Example data file for philosophers (50 entries).
 └── README.md             # This file.
-
+```
 
 ## Prerequisites
 

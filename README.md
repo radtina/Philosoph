@@ -44,33 +44,43 @@ my-app/
 
 1. Clone the Repository:
 
+```
 git clone https://github.com/yourusername/philosopher-chat-simulator.git
 cd philosopher-chat-simulator
+```
 
 2. Create a Virtual Environment and Install Dependencies:
 
+```
 python -m venv venv
 source venv/bin/activate      # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
+```
 
 Your requirements.txt should include at least:
 
+```
 fastapi
 uvicorn
 requests
 python-dotenv
+```
 
 3. Set Environment Variables:
 
 Create a .env file or set the environment variable manually. For example, using a .env file:
 
+```
 OPENAI_API_KEY=your_openai_api_key_here
+```
 
 Load the environment variable with python-dotenv if needed.
 
 4. Run the Backend Server:
 
+```
 uvicorn backend:app --reload --host 0.0.0.0 --port 8000
+```
 
 The backend should now be running at http://127.0.0.1:8000 (Swagger docs available at /docs).
 
@@ -79,8 +89,10 @@ The backend should now be running at http://127.0.0.1:8000 (Swagger docs availab
 1. Open index.html:
 Open the index.html file directly in your browser or use a simple HTTP server (like live-server or Python's http.server):
 
+```
 # Using Python 3
 python -m http.server 8001
+```
 
 2. Configure API URL:
 In script.js, ensure the API_URL variable is updated to point to your deployed backend (for local development, it should be http://127.0.0.1:8000/generate).

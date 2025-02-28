@@ -1,4 +1,5 @@
 import os
+from fastapi.staticfiles import StaticFiles
 import requests
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
@@ -14,6 +15,12 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+app.mount("/", StaticFiles(directory="static", html=True), name="static")
+
+@app.get("/api")
+def read_root():
+    return {"message": "Philosopher Chat Simulator API is running."}
 
 # OpenAI configuration for GPT-4 (or change model if needed)
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")

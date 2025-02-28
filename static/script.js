@@ -55,7 +55,7 @@ function populatePhilosopherList() {
     div.className = 'philosopher-item';
     div.textContent = philosopher.name;
     div.dataset.index = index;
-    div.addEventListener('dblclick', (e) => {
+    div.addEventListener('click', (e) => {
       const idx = e.currentTarget.dataset.index;
       // Initialize new instance's history with a copy of globalConversation.
       addPhilosopherInstance(philosophers[idx], [...globalConversation]);

@@ -67,7 +67,6 @@ python-dotenv
 ```
 
 3. Set Environment Variables:
-
 Create a .env file or set the environment variable manually. For example, using a .env file:
 
 ```

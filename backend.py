@@ -37,7 +37,7 @@ class GenerateRequest(BaseModel):
 class GenerateResponse(BaseModel):
     generated_text: str
 
-@app.post("/generate", response_model=GenerateResponse)
+@app.post("/api/generate", response_model=GenerateResponse)
 def generate_response(request: GenerateRequest):
     """
     This endpoint receives a personality prompt, a conversation history,

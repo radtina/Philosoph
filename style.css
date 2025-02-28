@@ -1,0 +1,184 @@
+/* Basic resets & layout */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+  
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 250px;
+    background-color: #f0f0f0;
+    border-right: 1px solid #ccc;
+    padding: 10px;
+    overflow-y: auto;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+.sidebar h2 {
+    text-align: center;
+    margin-top: 0;
+}
+.philosopher-item {
+    padding: 8px;
+    margin-bottom: 5px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    user-select: none;
+}
+.philosopher-item:hover {
+    background-color: #e0e0e0;
+}
+
+/* Sidebar toggle button */
+.sidebar-toggle {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 10;
+}
+.sidebar.collapsed {
+    transform: translateX(-250px);
+}
+
+/* Main content styles */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.controls {
+    margin-bottom: 10px;
+    text-align: center;
+}
+.controls input[type="text"] {
+    width: 60%;
+    padding: 8px;
+    font-size: 16px;
+}
+.controls button {
+    padding: 8px 16px;
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Philosopher panels container: stretch panels vertically */
+.philosopher-panels {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch; /* Ensures panels fill vertical space */
+}
+
+/* Philosopher panels: allow resizing, set max width, and add horizontal margins (~2 cm total between panels) */
+.philosopher-panel {
+    flex: 1;
+    margin: 0 0.5rem 0.5rem 0.5rem; /* ~1cm on left/right gives ~2cm total gap */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fafafa;
+    position: relative;
+    min-width: 200px;
+    max-width: 600px;
+    resize: both;
+    overflow: auto;
+}
+
+/* iOS-style minimal scrollbar for panels */
+.philosopher-panel::-webkit-scrollbar {
+    width: 4px;
+}
+.philosopher-panel::-webkit-scrollbar-track {
+    background: transparent;
+}
+.philosopher-panel::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+}
+
+/* Philosopher name header remains unchanged */
+.philosopher-name {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Conversation container: expand to fill available vertical space within the panel */
+.conversation {
+    flex: 1;
+    max-height: calc(100% - 50px);
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+/* Speech bubbles: no drag-resize; ensure they do not overflow panel width */
+.speech-bubble {
+    background-color: #e6e6ff;
+    border: 1px solid #999;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    min-height: 50px;
+    resize: none;
+    overflow: auto;
+    font-size: 10px; /* Smaller font for speech bubbles */
+    max-width: 100%;
+}
+
+/* Minimal scrollbar styling for speech bubbles */
+.speech-bubble::-webkit-scrollbar {
+    width: 3px;
+}
+.speech-bubble::-webkit-scrollbar-track {
+    background: transparent;
+}
+.speech-bubble::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 1px;
+}
+
+/* Next button remains unchanged */
+.next-button {
+    display: block;
+    margin: 0 auto;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Context menu styles remain unchanged */
+.context-menu {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    z-index: 1000;
+    display: none;
+    padding: 5px;
+}
+.context-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.context-menu li {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.context-menu li:hover {
+    background-color: #eee;
+}

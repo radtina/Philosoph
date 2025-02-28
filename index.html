@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Philosopher Chat Simulator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar: List of philosophers -->
+     
+    <div class="sidebar">
+      <h2>Philosophers</h2>
+      <div id="philosopherList"></div>
+    </div>
+
+    <!-- Main area: Topic input and philosopher panels -->
+    <div class="main-content">
+      <div class="controls">
+        <input type="text" id="topicInput" placeholder="Enter topic..." />
+        <button id="startButton">Start Conversation</button>
+      </div>
+      <div class="philosopher-panels" id="philosopherPanels">
+        <!-- Panels will be dynamically added here -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Context menu for right-click on philosopher panels -->
+  <div class="context-menu" id="contextMenu">
+    <ul>
+      <li id="removePhilosopher">Remove Philosopher</li>
+    </ul>
+  </div>
+  <script src="philosophers.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

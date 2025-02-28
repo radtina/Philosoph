@@ -41,7 +41,7 @@ class GenerateRequest(BaseModel):
 class GenerateResponse(BaseModel):
     generated_text: str
 
-@app.post("/generate", response_model=GenerateResponse)
+@app.post("/api/generate", response_model=GenerateResponse)
 def generate_response(request: GenerateRequest):
     """
     This endpoint receives a personality prompt, a conversation history,
@@ -62,7 +62,7 @@ def generate_response(request: GenerateRequest):
     if phase == "opening":
         system_instructions = (
             f"{request.personality}\n\n"
-            "You are engaged in an argumentative conversation about the following topic: '{request.topic}'. "
+            "You are engaged in an argumentative conversation about the topic'. "
             "Ensure that your opinions, whether negative or positive, always reflect your own personality and life experiences and thoughts about the discussed topic. "
         )
         final_instruction = "Say your opening argument—an initial stance regarding the topic. Your entire response should be less than 80 words. "
@@ -89,7 +89,7 @@ def generate_response(request: GenerateRequest):
         let_speaker = msg.speaker.strip() if msg.speaker else ""
         speaker_name = let_speaker if let_speaker and let_speaker.lower() != "unknown" else "User"
         messages.append({
-            "role": "system",
+            "role": "user",
             "content": f'{speaker_name} said: "{msg.content}"'
         })
     

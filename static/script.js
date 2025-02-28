@@ -122,7 +122,7 @@ function removePanelFromDOM(instanceId) {
  * BACKEND API CALL
  ****************************************************************************/
 // Set your backend URL (update if deployed)
-const API_URL = "https://philosoph.onrender.com";
+const API_URL = "https://philosoph.onrender.com/api/generate";
 
 /**
  * Call the backend API to generate a philosopher's response.

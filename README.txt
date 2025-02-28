@@ -1,7 +1,9 @@
-Philosopher Chat Simulator
+# **Philosopher Chat Simulator**
+
 A web application that simulates an argumentative conversation among various figures (philosophers, movie characters, celebrities, etc.) powered by OpenAI's GPT models. Users provide a topic, and each figure (with its own personality) generates opening arguments and continues the debate sequentially.
 
-Features
+## Features
+
 User Input:
 Enter a topic to start a new conversation. When a new topic is provided, the conversation history resets.
 
@@ -28,33 +30,34 @@ my-app/
 └── README.md             # This file.
 
 Prerequisites
+
 Python 3.7+
 Node.js (if modifying frontend build tools)
 A GitHub account
 An OpenAI API key with access to GPT-4 or GPT-3.5-turbo (set as an environment variable)
+
 Setup Instructions
+
 Backend
+
 Clone the Repository:
 
-bash
-Copy
 git clone https://github.com/yourusername/philosopher-chat-simulator.git
 cd philosopher-chat-simulator
+
 Create a Virtual Environment and Install Dependencies:
 
-bash
-Copy
 python -m venv venv
 source venv/bin/activate      # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
+
 Your requirements.txt should include at least:
 
-nginx
-Copy
 fastapi
 uvicorn
 requests
 python-dotenv
+
 Set Environment Variables:
 Create a .env file or set the environment variable manually. For example, using a .env file:
 
@@ -65,8 +68,7 @@ Load the environment variable with python-dotenv if needed.
 
 Run the Backend Server:
 
-bash
-Copy
+
 uvicorn backend:app --reload --host 0.0.0.0 --port 8000
 The backend should now be running at http://127.0.0.1:8000 (Swagger docs available at /docs).
 

@@ -18,10 +18,6 @@ app.add_middleware(
 
 app.mount("/", StaticFiles(directory="static", html=True), name="static")
 
-@app.get("/api")
-def read_root():
-    return {"message": "Philosopher Chat Simulator API is running."}
-
 # OpenAI configuration for GPT-4 (or change model if needed)
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 if not OPENAI_API_KEY:

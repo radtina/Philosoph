@@ -4,7 +4,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f7f7f7;
 }
-  
+
 .container {
     display: flex;
     height: 100vh;
@@ -80,13 +80,13 @@ body {
     flex: 1;
     display: flex;
     justify-content: space-around;
-    align-items: stretch; /* Ensures panels fill vertical space */
+    align-items: stretch;
 }
 
-/* Philosopher panels: allow resizing, set max width, and add horizontal margins (~2 cm total between panels) */
+/* Philosopher panels: allow resizing, set max width, and add horizontal margins */
 .philosopher-panel {
     flex: 1;
-    margin: 0 0.5rem 0.5rem 0.5rem; /* ~1cm on left/right gives ~2cm total gap */
+    margin: 0 0.5rem 0.5rem 0.5rem;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -110,7 +110,6 @@ body {
     border-radius: 2px;
 }
 
-/* Philosopher name header remains unchanged */
 .philosopher-name {
     font-weight: bold;
     text-align: center;
@@ -136,7 +135,7 @@ body {
     min-height: 50px;
     resize: none;
     overflow: auto;
-    font-size: 10px; /* Smaller font for speech bubbles */
+    font-size: 10px;
     max-width: 100%;
 }
 
@@ -152,7 +151,6 @@ body {
     border-radius: 1px;
 }
 
-/* Next button remains unchanged */
 .next-button {
     display: block;
     margin: 0 auto;
@@ -161,7 +159,7 @@ body {
     cursor: pointer;
 }
 
-/* Context menu styles remain unchanged */
+/* Context menu styles */
 .context-menu {
     position: absolute;
     background-color: white;

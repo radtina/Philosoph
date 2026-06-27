@@ -1,0 +1,12 @@
+.env
+.venv/
+venv/
+myenv/
+__pycache__/
+*.py[cod]
+*.log
+research_cache.json
+
+followers.json
+following.json
+not_following_you_back.txt

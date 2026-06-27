@@ -1,0 +1,179 @@
+{
+  "Socrates": {
+    "sources": [
+      {
+        "work": "Plato, Apology",
+        "themes": ["virtue", "knowledge", "death", "wisdom", "justice", "courage"],
+        "notes": [
+          "Socrates presents philosophy as examination of oneself and others rather than possession of final wisdom.",
+          "He treats fearing death as a possible form of false knowledge, because one claims to know that death is bad.",
+          "He ties moral seriousness to care for the soul more than wealth, reputation, or bodily safety."
+        ]
+      },
+      {
+        "work": "Plato, Laches",
+        "themes": ["courage", "virtue", "knowledge", "fear"],
+        "notes": [
+          "The dialogue examines courage by testing definitions such as endurance, wise endurance, and knowledge of what is fearful and hopeful.",
+          "Socratic questioning exposes that courage cannot be reduced to mere boldness or persistence."
+        ]
+      }
+    ]
+  },
+  "Plato": {
+    "sources": [
+      {
+        "work": "Republic",
+        "themes": ["justice", "soul", "virtue", "knowledge", "education", "politics"],
+        "notes": [
+          "Justice is presented as harmony: each part of the soul or city performing its proper function under rational order.",
+          "The Form of the Good is the highest explanatory principle, making knowledge and right action intelligible.",
+          "Education turns the soul from appearances toward truth, rather than merely transferring information."
+        ]
+      },
+      {
+        "work": "Phaedo",
+        "themes": ["death", "soul", "body", "knowledge"],
+        "notes": [
+          "Philosophy is framed as preparation for death because the philosopher loosens attachment to bodily distractions.",
+          "The soul is treated as more suited than the body to grasp stable realities."
+        ]
+      }
+    ]
+  },
+  "Aristotle": {
+    "sources": [
+      {
+        "work": "Nicomachean Ethics",
+        "themes": ["virtue", "courage", "happiness", "habit", "reason", "friendship", "ethics"],
+        "notes": [
+          "Human flourishing, or eudaimonia, is activity of the soul in accordance with virtue over a complete life.",
+          "Moral virtues are built through habituation, not by theory alone.",
+          "Courage is a mean concerning fear and confidence, especially when facing danger for a noble end.",
+          "Virtue usually lies between excess and deficiency, determined by practical wisdom rather than a mechanical average."
+        ]
+      },
+      {
+        "work": "Politics",
+        "themes": ["city", "politics", "community", "law", "citizenship"],
+        "notes": [
+          "The city exists not merely for survival but for living well.",
+          "Human beings are political animals whose flourishing depends on forms of shared life."
+        ]
+      }
+    ]
+  },
+  "David Hume": {
+    "sources": [
+      {
+        "work": "A Treatise of Human Nature",
+        "themes": ["reason", "passion", "causation", "self", "morality", "knowledge"],
+        "notes": [
+          "Reason is described as serving the passions rather than independently motivating action.",
+          "Causal belief arises from habit and repeated experience, not rational insight into necessary connection.",
+          "The self is analyzed as a bundle of perceptions rather than a simple permanent substance."
+        ]
+      },
+      {
+        "work": "An Enquiry Concerning the Principles of Morals",
+        "themes": ["morality", "sympathy", "utility", "virtue"],
+        "notes": [
+          "Moral judgment is rooted in sentiment, sympathy, and perception of usefulness or agreeableness.",
+          "Virtues are often praised because they are useful or agreeable to oneself or others."
+        ]
+      }
+    ]
+  },
+  "Immanuel Kant": {
+    "sources": [
+      {
+        "work": "Groundwork of the Metaphysics of Morals",
+        "themes": ["duty", "morality", "freedom", "autonomy", "reason", "dignity"],
+        "notes": [
+          "The good will is good through willing, not through consequences.",
+          "Moral action has distinctive worth when done from duty rather than inclination.",
+          "The categorical imperative asks whether one can will the maxim of action as universal law.",
+          "Persons must be treated as ends in themselves, never merely as means."
+        ]
+      },
+      {
+        "work": "Critique of Practical Reason",
+        "themes": ["freedom", "law", "reason", "morality"],
+        "notes": [
+          "Freedom and moral law are connected through practical reason.",
+          "Moral obligation is not reducible to empirical desire or expected happiness."
+        ]
+      }
+    ]
+  },
+  "Friedrich Nietzsche": {
+    "sources": [
+      {
+        "work": "Beyond Good and Evil",
+        "themes": ["morality", "truth", "power", "values", "freedom", "religion"],
+        "notes": [
+          "Nietzsche challenges philosophers who pretend their values are objective truths rather than expressions of deeper drives.",
+          "He criticizes herd morality and asks what type of life a moral system serves.",
+          "He treats value creation as more important than passive obedience to inherited norms."
+        ]
+      },
+      {
+        "work": "On the Genealogy of Morality",
+        "themes": ["morality", "guilt", "resentment", "power", "religion"],
+        "notes": [
+          "Moral concepts are investigated genealogically by asking what historical forces produced them.",
+          "Slave morality is associated with resentment and the inversion of noble values."
+        ]
+      }
+    ]
+  },
+  "Karl Marx": {
+    "sources": [
+      {
+        "work": "Economic and Philosophic Manuscripts of 1844",
+        "themes": ["labor", "alienation", "capitalism", "class", "human nature"],
+        "notes": [
+          "Alienated labor separates workers from the product, the labor process, their species-being, and other people.",
+          "Human fulfillment is tied to free, conscious, social productive activity."
+        ]
+      },
+      {
+        "work": "The German Ideology",
+        "themes": ["ideology", "materialism", "history", "class", "consciousness"],
+        "notes": [
+          "Material social relations shape dominant ideas more than ideas independently shape society.",
+          "The ruling ideas of an age tend to reflect the interests of the ruling class."
+        ]
+      },
+      {
+        "work": "Capital",
+        "themes": ["capitalism", "labor", "value", "exploitation", "commodity"],
+        "notes": [
+          "Capitalism is analyzed through commodity production, labor power, surplus value, and exploitation.",
+          "Social relations can appear as relations between things through commodity fetishism."
+        ]
+      }
+    ]
+  },
+  "John Locke": {
+    "sources": [
+      {
+        "work": "An Essay Concerning Human Understanding",
+        "themes": ["knowledge", "experience", "identity", "mind", "reason"],
+        "notes": [
+          "The mind begins without innate ideas and receives materials of knowledge from experience.",
+          "Ideas come through sensation and reflection.",
+          "Personal identity is tied to continuity of consciousness rather than sameness of substance."
+        ]
+      },
+      {
+        "work": "Second Treatise of Government",
+        "themes": ["rights", "property", "government", "consent", "liberty"],
+        "notes": [
+          "Political authority requires consent and exists to protect natural rights.",
+          "Property is connected to labor, though limited by spoilage and enough-and-as-good conditions."
+        ]
+      }
+    ]
+  }
+}

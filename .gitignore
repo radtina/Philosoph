@@ -10,3 +10,9 @@ research_cache.json
 followers.json
 following.json
 not_following_you_back.txt
+ig.py
+
+IMPLEMENTATION_SUMMARY.md
+IMPROVEMENTS_COMPLETE.md
+QUICKSTART.md
+verify_improvements.py
